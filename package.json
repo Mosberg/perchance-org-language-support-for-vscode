@@ -3,6 +3,10 @@
   "displayName": "Perchance.org Language Support for VSCode",
   "description": "Language Support for Perchance.org in Visual Studio Code.",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mosberg/perchance-org-language-support-for-vscode"
+  },
   "publisher": "Mosberg",
   "author": {
     "name": "Mosberg"
