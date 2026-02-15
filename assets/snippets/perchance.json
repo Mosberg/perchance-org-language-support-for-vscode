@@ -1,0 +1,91 @@
+{
+  "Perchance list": {
+    "prefix": "list",
+    "body": ["${1:listName}", "  ${2:item}", "  ${3:item}"],
+    "description": "Create a list with items"
+  },
+  "Perchance list shorthand": {
+    "prefix": "list=",
+    "body": ["${1:listName} = ${2:[otherList]}"],
+    "description": "Create a list shorthand assignment"
+  },
+  "Perchance $output": {
+    "prefix": "output",
+    "body": ["$output", "  ${1:[listName]}"],
+    "description": "Create an output list"
+  },
+  "Perchance import": {
+    "prefix": "import",
+    "body": ["${1:alias} = {import:${2:generator-name}}"],
+    "description": "Import another generator or plugin"
+  },
+  "Perchance preprocess import": {
+    "prefix": "preprocess",
+    "body": ["$preprocess = {import:${1:preprocessor-name}}"],
+    "description": "Import a preprocessor"
+  },
+  "Perchance preprocess function": {
+    "prefix": "preprocess-fn",
+    "body": [
+      "$preprocess(text) =>",
+      "  ${1:text} = ${1:text}.replaceAll(\"${2:from}\", \"${3:to}\");",
+      "  return ${1:text};"
+    ],
+    "description": "Define a custom preprocessor"
+  },
+  "Perchance function list": {
+    "prefix": "list-fn",
+    "body": [
+      "${1:functionName}(${2:args}) =>",
+      "  ${3:// TODO: implement}",
+      "  return ${4:result};"
+    ],
+    "description": "Define an arrow-function list"
+  },
+  "Perchance async function list": {
+    "prefix": "list-async-fn",
+    "body": [
+      "async ${1:functionName}(${2:args}) =>",
+      "  ${3:// TODO: implement}",
+      "  return ${4:result};"
+    ],
+    "description": "Define an async arrow-function list"
+  },
+  "Perchance meta": {
+    "prefix": "meta",
+    "body": [
+      "$meta",
+      "  title = ${1:Title}",
+      "  description = ${2:Description}",
+      "  image = ${3:https://example.com/image.png}",
+      "  tags = ${4:tag1,tag2}"
+    ],
+    "description": "Define generator metadata"
+  },
+  "Perchance choice": {
+    "prefix": "choice",
+    "body": ["{${1:option1}|${2:option2}|${3:option3}}"],
+    "description": "Inline curly choice"
+  },
+  "Perchance dynamic odds": {
+    "prefix": "odds",
+    "body": ["${1:item} ^[${2:condition == true}]"],
+    "description": "Dynamic odds condition"
+  },
+  "Perchance plugin import": {
+    "prefix": "plugin",
+    "body": ["${1:pluginAlias} = {import:${2:plugin-name}}"],
+    "description": "Import a plugin"
+  },
+  "Perchance HTML template": {
+    "prefix": "html-template",
+    "body": [
+      "<main>",
+      "  <h1>${1:Generator Title}</h1>",
+      "  <div class=\"output\">[${2:output}]</div>",
+      "  <button onclick=\"update();\">${3:Generate}</button>",
+      "</main>"
+    ],
+    "description": "Basic HTML output template"
+  }
+}
