@@ -6,12 +6,15 @@
   "patterns": [
     { "include": "#comments" },
     { "include": "#specialListNames" },
+    { "include": "#metaListHeader" },
     { "include": "#blockName" },
     { "include": "#functionHeader" },
     { "include": "#listShorthand" },
     { "include": "#metaDirective" },
+    { "include": "#metaInline" },
     { "include": "#propertyFunction" },
     { "include": "#propertyAssignment" },
+    { "include": "#specialConstructs" },
     { "include": "#pluginImport" },
     { "include": "#dynamicOdds" },
     { "include": "#randomChoice" },
@@ -34,6 +37,14 @@
         {
           "name": "entity.name.section.perchance",
           "match": "^\\s*(\\$meta|settings|userInputs|imageOptions|imageButtons|defaultCommentOptions|commentChannels|galleryOptions)\\s*$"
+        }
+      ]
+    },
+    "metaListHeader": {
+      "patterns": [
+        {
+          "name": "entity.name.section.perchance",
+          "match": "^\\s*(meta:[A-Za-z_][\\w-]*)\\s*$"
         }
       ]
     },
@@ -81,13 +92,22 @@
         }
       ]
     },
+    "metaInline": {
+      "patterns": [
+        {
+          "name": "variable.other.key.perchance",
+          "match": "\\bmeta:[A-Za-z_][\\w-]*\\b"
+        }
+      ]
+    },
     "propertyFunction": {
       "patterns": [
         {
           "name": "meta.property.function.perchance",
-          "match": "^\\s+([A-Za-z_][\\w-]*)\\s*\\([^)]*\\)\\s*=>",
+          "match": "^\\s+(async\\s+)?([A-Za-z_][\\w-]*)\\s*\\([^)]*\\)\\s*=>",
           "captures": {
-            "1": { "name": "entity.name.function.perchance" }
+            "1": { "name": "keyword.control.perchance" },
+            "2": { "name": "entity.name.function.perchance" }
           }
         }
       ]
@@ -101,6 +121,18 @@
             "1": { "name": "variable.other.key.perchance" },
             "2": { "name": "keyword.operator.assignment.perchance" }
           }
+        }
+      ]
+    },
+    "specialConstructs": {
+      "patterns": [
+        {
+          "name": "constant.character.escape.perchance",
+          "match": "\\{\\|\\}"
+        },
+        {
+          "name": "constant.character.escape.perchance",
+          "match": "<<<[^>]+>>>"
         }
       ]
     },
@@ -198,11 +230,20 @@
               "name": "keyword.operator.perchance",
               "match": "==|!=|<=|>=|=|<|>|\\?|:"
             },
+            { "include": "#builtins" },
             { "include": "#strings" },
             { "include": "#numbers" },
             { "include": "#listReference" },
             { "include": "#keywords" }
           ]
+        }
+      ]
+    },
+    "builtins": {
+      "patterns": [
+        {
+          "name": "variable.language.perchance",
+          "match": "\\b(input|settings|this|root|window|globalThis|localStorage)\\b"
         }
       ]
     },
