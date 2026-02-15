@@ -7,6 +7,7 @@
   "author": {
     "name": "Mosberg"
   },
+  "icon": "assets/img/favicon-1024x1024-white-bg.png",
   "engines": {
     "vscode": "^1.109.0"
   },
@@ -23,7 +24,8 @@
         ],
         "extensions": [
           ".per",
-          ".perchance"
+          ".perchance",
+          ".prch"
         ],
         "configuration": "./language-configuration.json"
       }
