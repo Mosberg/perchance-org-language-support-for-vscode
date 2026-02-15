@@ -12,6 +12,36 @@ For example if there is an image subfolder under your extension project workspac
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
+### Declarative Language Features
+
+**Declarative features are defined in configuration files and include basic functionalities such as**:
+
+- Syntax highlighting
+
+- Snippet completion
+
+- Bracket matching, autoclosing, and autosurrounding
+
+- Comment toggling
+
+- Auto-indentation
+
+- Folding (based on markers)
+
+### Programmatic Language Features
+
+**Programmatic features are more dynamic and include**:
+
+- Auto-completion
+
+- Error checking
+
+- Jump-to-definition
+
+- Hover information
+
+- Code formatting and refactoring
+
 ## Requirements
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
@@ -63,33 +93,3 @@ You can author your README using Visual Studio Code. Here are some useful editor
 - [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
-
-## Declarative Language Features
-
-**Declarative features are defined in configuration files and include basic functionalities such as**:
-
-- Syntax highlighting
-
-- Snippet completion
-
-- Bracket matching, autoclosing, and autosurrounding
-
-- Comment toggling
-
-- Auto-indentation
-
-- Folding (based on markers)
-
-## Programmatic Language Features
-
-**Programmatic features are more dynamic and include**:
-
-- Auto-completion
-
-- Error checking
-
-- Jump-to-definition
-
-- Hover information
-
-- Code formatting and refactoring

@@ -48,7 +48,7 @@ Enhance Copilot’s ability to assist with Perchance.org development by providin
 
 ## Index
 
-[Remote Index](remote-index/remote-index.md)
-[Knowledge Base](remote-index/knowledge-base.json)
-[Semantic tags](remote-index/semantic-tags.yml)
-[Plugin Index](remote-index/plugin-index.json)
+[Remote Index](./remote-index/remote-index.md)
+[Knowledge Base](./remote-index/knowledge-base.json)
+[Semantic tags](./remote-index/semantic-tags.yml)
+[Plugin Index](./remote-index/plugin-index.json)
