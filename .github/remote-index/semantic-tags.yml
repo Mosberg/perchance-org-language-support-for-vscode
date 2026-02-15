@@ -1,0 +1,52 @@
+# Semantic tags for Copilot - maps user queries to Perchance resources
+perchance_search:
+  # Core queries
+  core: ["tutorial", "docs", "plugins", "templates", "resources", "upload", "faq"]
+  moss:
+    [
+      "ai-text-rewriter",
+      "ai-code-generator",
+      "ai-image-generator",
+      "ai-character",
+      "ai-chat",
+      "t2i",
+      "moss"
+    ]
+
+  # Mechanics & Probability
+  dice: ["dice", "roll", "selectmany", "sumitems"]
+  consumable: ["consumable", "persistent", "deck", "draw"]
+  probability: ["odds", "dynamic-odds", "if-else", "percentages"]
+  math: ["median", "highest", "sum", "permutations", "counter"]
+
+  # Lists & Hierarchies
+  lists: ["filter", "sublist", "hierarchy", "nested", "instance", "createinstance"]
+  selection: ["exclude", "duplicate", "combine", "index", "getname"]
+
+  # UI & Interactions
+  ui: ["click", "tap", "button", "counter", "numbered", "sequential"]
+  input: ["dropdown", "user-input", "remember-inputs", "question-answer"]
+  state: ["history", "first-load", "prevent-randomize", "track-selections"]
+
+  # Visuals
+  images: ["random-image", "image-url", "image-layer", "thumbnail"]
+  visuals: ["colored-text", "custom-cursor", "bingo-table", "emoji-map"]
+  css: ["hover", "spoiler", "meta", "screen-size"]
+
+  # Data & Formatting
+  data: ["seed", "url-variable", "passing-variables"]
+  text: ["regex", "replace", "commas-numbers", "acronym"]
+
+  # Specialized
+  plugins: ["selectleaf", "seeder", "tap-plugin", "goto", "comments"]
+  games: ["dice-game", "damage-roll", "fuel", "kings", "presidents"]
+
+# Quick mappings for common patterns
+quick_patterns:
+  "dice example": "https://perchance.org/selectmany-sumitems-example"
+  "consumable list": "https://perchance.org/consumable-list-with-dynamic-odds-example#edit"
+  "random image": "https://perchance.org/simple-random-images-example#edit"
+  "tap randomize": "https://perchance.org/tap-image-to-randomize#edit"
+  "hide output": "https://perchance.org/hide-output-until-click-example#edit"
+  "persistent list": "https://perchance.org/persistent-consumable-list-example#edit"
+  "seed url": "https://perchance.org/seed-from-url-example#edit"

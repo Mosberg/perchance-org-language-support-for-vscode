@@ -1,0 +1,484 @@
+{
+  "plugins": [
+    {
+      "label": "a-an-plugin",
+      "description": "Improved a/an handling",
+      "url": "https://perchance.org/a-an-plugin",
+      "snippet": "tap = {import:tap-plugin}"
+    },
+    {
+      "label": "ai-text-plugin",
+      "description": "Generate text (stories, poems, etc) based on an instruction",
+      "url": "https://perchance.org/ai-text-plugin",
+      "snippet": "ai = {import:ai-text-plugin}"
+    },
+    {
+      "label": "background-audio-plugin",
+      "description": "Play background audio",
+      "url": "https://perchance.org/background-audio-plugin",
+      "snippet": "backgroundAudio = {import:background-audio-plugin}"
+    },
+    {
+      "label": "background-image-plugin",
+      "description": "Set a background image easily",
+      "url": "https://perchance.org/background-image-plugin",
+      "snippet": "background = {import:background-image-plugin}"
+    },
+    {
+      "label": "be-plugin",
+      "description": "Auto is/are based on context",
+      "url": "https://perchance.org/be-plugin",
+      "snippet": "be = {import:be-plugin}"
+    },
+    {
+      "label": "bug-report-plugin",
+      "description": "Encrypt debug data for bug reports",
+      "url": "https://perchance.org/bug-report-plugin",
+      "snippet": "bugReport = {import:bug-report-plugin}"
+    },
+    {
+      "label": "comments-plugin",
+      "description": "Embed a comments/feedback section in your generator",
+      "url": "https://perchance.org/comments-plugin",
+      "snippet": "commentsPlugin = {import:comments-plugin}"
+    },
+    {
+      "label": "conjugate-plugin",
+      "description": "Generate verb conjugations",
+      "url": "https://perchance.org/conjugate-plugin",
+      "snippet": "conjugate = {import:conjugate-plugin}"
+    },
+    {
+      "label": "consumable-leaf-list-plugin",
+      "description": "Consumable list of leaf items",
+      "url": "https://perchance.org/consumable-leaf-list-plugin",
+      "snippet": "consumableLeafList = {import:consumable-leaf-list-plugin}"
+    },
+    {
+      "label": "consumable-list-loop-plugin",
+      "description": "Consumable lists that reset when empty",
+      "url": "https://perchance.org/consumable-list-loop-plugin",
+      "snippet": "consumableListLoop = {import:consumable-list-loop-plugin}"
+    },
+    {
+      "label": "copy-text-plugin",
+      "description": "Allow users to copy output text",
+      "url": "https://perchance.org/copy-text-plugin",
+      "snippet": "copyText = {import:copy-text-plugin}"
+    },
+    {
+      "label": "create-instance-plugin",
+      "description": "Define blueprints and create random instances",
+      "url": "https://perchance.org/create-instance-plugin",
+      "snippet": "createInstance = {import:create-instance-plugin}"
+    },
+    {
+      "label": "create-instances-plugin",
+      "description": "Create a list of random instances from a blueprint",
+      "url": "https://perchance.org/create-instances-plugin",
+      "snippet": "createInstances = {import:create-instances-plugin}"
+    },
+    {
+      "label": "date-plugin",
+      "description": "Manipulate dates",
+      "url": "https://perchance.org/date-plugin",
+      "snippet": "date = {import:date-plugin}"
+    },
+    {
+      "label": "dice-plugin",
+      "description": "Dice rolls with notation like 2d8",
+      "url": "https://perchance.org/dice-plugin",
+      "snippet": "dice = {import:dice-plugin}"
+    },
+    {
+      "label": "download-button-plugin",
+      "description": "Add a download button",
+      "url": "https://perchance.org/download-button-plugin",
+      "snippet": "downloadButton = {import:download-button-plugin}"
+    },
+    {
+      "label": "dynamic-import-plugin",
+      "description": "Import many generators without load cost",
+      "url": "https://perchance.org/dynamic-import-plugin",
+      "snippet": "dynamicImport = {import:dynamic-import-plugin}"
+    },
+    {
+      "label": "exclude-items-plugin",
+      "description": "Exclude items during random selection",
+      "url": "https://perchance.org/exclude-items-plugin",
+      "snippet": "excludeItems = {import:exclude-items-plugin}"
+    },
+    {
+      "label": "favicon-plugin",
+      "description": "Change the browser tab icon",
+      "url": "https://perchance.org/favicon-plugin",
+      "snippet": "favicon = {import:favicon-plugin}"
+    },
+    {
+      "label": "filter-list-plugin",
+      "description": "Filter lists dynamically",
+      "url": "https://perchance.org/filter-list-plugin",
+      "snippet": "filterList = {import:filter-list-plugin}"
+    },
+    {
+      "label": "fixed-until-reload-plugin",
+      "description": "Values only randomize on reload",
+      "url": "https://perchance.org/fixed-until-reload-plugin",
+      "snippet": "fixedUntilReload = {import:fixed-until-reload-plugin}"
+    },
+    {
+      "label": "flat-avatar-plugin",
+      "description": "Generate flat avatars",
+      "url": "https://perchance.org/flat-avatar-plugin",
+      "snippet": "avatar = {import:flat-avatar-plugin}"
+    },
+    {
+      "label": "font-plugin",
+      "description": "Change fonts using Google Fonts",
+      "url": "https://perchance.org/font-plugin",
+      "snippet": "font = {import:font-plugin}"
+    },
+    {
+      "label": "fullscreen-button-plugin",
+      "description": "Make a fullscreen toggle",
+      "url": "https://perchance.org/fullscreen-button-plugin",
+      "snippet": "fullscreenButton = {import:fullscreen-button-plugin}"
+    },
+    {
+      "label": "generator-stats-plugin",
+      "description": "Add page view counter and stats",
+      "url": "https://perchance.org/generator-stats-plugin",
+      "snippet": "generatorStats = {import:generator-stats-plugin}"
+    },
+    {
+      "label": "google-sheets-plugin",
+      "description": "Import lists from Google Sheets",
+      "url": "https://perchance.org/google-sheets-plugin",
+      "snippet": "googleSheets = {import:google-sheets-plugin}"
+    },
+    {
+      "label": "goto-plugin",
+      "description": "Make simple text adventures",
+      "url": "https://perchance.org/goto-plugin",
+      "snippet": "goto = {import:goto-plugin}"
+    },
+    {
+      "label": "image-layer-combiner-plugin",
+      "description": "Randomly combine/overlay sets of images",
+      "url": "https://perchance.org/image-layer-combiner-plugin",
+      "snippet": "imageLayerCombiner = {import:image-layer-combiner-plugin}"
+    },
+    {
+      "label": "image-plugin",
+      "description": "Easy image embedding",
+      "url": "https://perchance.org/image-plugin",
+      "snippet": "image = {import:image-plugin}"
+    },
+    {
+      "label": "join-lists-plugin",
+      "description": "Join lists or items into a single list",
+      "url": "https://perchance.org/join-lists-plugin",
+      "snippet": "joinLists = {import:join-lists-plugin}"
+    },
+    {
+      "label": "kv-plugin",
+      "description": "Store data across reloads",
+      "url": "https://perchance.org/kv-plugin",
+      "snippet": "kv = {import:kv-plugin}"
+    },
+    {
+      "label": "layout-maker-plugin",
+      "description": "Create visual layouts without HTML",
+      "url": "https://perchance.org/layout-maker-plugin",
+      "snippet": "layoutMaker = {import:layout-maker-plugin}"
+    },
+    {
+      "label": "literal-plugin",
+      "description": "Auto-escape brackets in text",
+      "url": "https://perchance.org/literal-plugin",
+      "snippet": "literal = {import:literal-plugin}"
+    },
+    {
+      "label": "lockable-list-plugin",
+      "description": "Add lock buttons to keep list selections",
+      "url": "https://perchance.org/lockable-list-plugin",
+      "snippet": "lockableList = {import:lockable-list-plugin}"
+    },
+    {
+      "label": "locker-plugin",
+      "description": "More powerful list locking",
+      "url": "https://perchance.org/locker-plugin",
+      "snippet": "locker = {import:locker-plugin}"
+    },
+    {
+      "label": "make-table-plugin",
+      "description": "Create HTML tables easily",
+      "url": "https://perchance.org/make-table-plugin",
+      "snippet": "makeTable = {import:make-table-plugin}"
+    },
+    {
+      "label": "markdown-plugin",
+      "description": "Convert markdown to HTML",
+      "url": "https://perchance.org/markdown-plugin",
+      "snippet": "markdown = {import:markdown-plugin}"
+    },
+    {
+      "label": "markov-chain-plugin",
+      "description": "Generate random text from a corpus",
+      "url": "https://perchance.org/markov-chain-plugin",
+      "snippet": "markov = {import:markov-chain-plugin}"
+    },
+    {
+      "label": "navbar-plugin",
+      "description": "Add a navigation bar",
+      "url": "https://perchance.org/navbar-plugin",
+      "snippet": "navbar = {import:navbar-plugin}"
+    },
+    {
+      "label": "nested-plugin",
+      "description": "Build hierarchical random worlds",
+      "url": "https://perchance.org/nested-plugin",
+      "snippet": "nested = {import:nested-plugin}"
+    },
+    {
+      "label": "number-set-plugin",
+      "description": "Generate a set of numbers that add up",
+      "url": "https://perchance.org/number-set-plugin",
+      "snippet": "numberSet = {import:number-set-plugin}"
+    },
+    {
+      "label": "numerals-to-ordinal-words-plugin",
+      "description": "Convert numerals to ordinal words",
+      "url": "https://perchance.org/numerals-to-ordinal-words-plugin",
+      "snippet": "numToOrdWord = {import:numerals-to-ordinal-words-plugin}"
+    },
+    {
+      "label": "numerals-to-ordinals-plugin",
+      "description": "Convert numerals to ordinals",
+      "url": "https://perchance.org/numerals-to-ordinals-plugin",
+      "snippet": "numToOrd = {import:numerals-to-ordinals-plugin}"
+    },
+    {
+      "label": "numerals-to-words-plugin",
+      "description": "Convert numerals to words",
+      "url": "https://perchance.org/numerals-to-words-plugin",
+      "snippet": "numToWord = {import:numerals-to-words-plugin}"
+    },
+    {
+      "label": "pattern-maker-plugin",
+      "description": "Procedurally generated images that look like your input",
+      "url": "https://perchance.org/pattern-maker-plugin",
+      "snippet": "patternMaker = {import:pattern-maker-plugin}"
+    },
+    {
+      "label": "Plugin Index",
+      "description": "Perchance plugins list",
+      "url": "https://perchance.org/plugins",
+      "snippet": "https://perchance.org/plugins"
+    },
+    {
+      "label": "plural-plugin",
+      "description": "Custom plural forms",
+      "url": "https://perchance.org/plural-plugin",
+      "snippet": "plural = {import:plural-plugin}"
+    },
+    {
+      "label": "press-enter-plugin",
+      "description": "Trigger randomization with Enter",
+      "url": "https://perchance.org/press-enter-plugin",
+      "snippet": "pressEnter = {import:press-enter-plugin}"
+    },
+    {
+      "label": "pride-plugin",
+      "description": "Rainbow flag in June",
+      "url": "https://perchance.org/pride-plugin",
+      "snippet": "pride = {import:pride-plugin}"
+    },
+    {
+      "label": "print-button-plugin",
+      "description": "Add a print button",
+      "url": "https://perchance.org/print-button-plugin",
+      "snippet": "printButton = {import:print-button-plugin}"
+    },
+    {
+      "label": "random-decimal-plugin",
+      "description": "Generate a random decimal between two numbers",
+      "url": "https://perchance.org/random-decimal-plugin",
+      "snippet": "randomDecimal = {import:random-decimal-plugin}"
+    },
+    {
+      "label": "random-image-plugin",
+      "description": "Generate a random image from a topic",
+      "url": "https://perchance.org/random-image-plugin",
+      "snippet": "imageRandom = {import:random-image-plugin}"
+    },
+    {
+      "label": "random-integer-plugin",
+      "description": "Generate a random integer between two integers",
+      "url": "https://perchance.org/random-integer-plugin",
+      "snippet": "randomInteger = {import:random-integer-plugin}"
+    },
+    {
+      "label": "random-select-plugin",
+      "description": "Randomly choose between inputs with odds",
+      "url": "https://perchance.org/random-select-plugin",
+      "snippet": "select = {import:random-select-plugin}"
+    },
+    {
+      "label": "remember-plugin",
+      "description": "Save variables across reloads",
+      "url": "https://perchance.org/remember-plugin",
+      "snippet": "remember = {import:remember-plugin}"
+    },
+    {
+      "label": "roll-table-plugin",
+      "description": "Use dice ranges instead of odds",
+      "url": "https://perchance.org/roll-table-plugin",
+      "snippet": "rollTable = {import:roll-table-plugin}"
+    },
+    {
+      "label": "roman-numerals-plugin",
+      "description": "Convert numbers to Roman numerals",
+      "url": "https://perchance.org/roman-numerals-plugin",
+      "snippet": "roman = {import:roman-numerals-plugin}"
+    },
+    {
+      "label": "rpg-icon-plugin",
+      "description": "Access a set of RPG-themed icons",
+      "url": "https://perchance.org/rpg-icon-plugin",
+      "snippet": "icon = {import:rpg-icon-plugin}"
+    },
+    {
+      "label": "secret-plugin",
+      "description": "Encrypt and decrypt data",
+      "url": "https://perchance.org/secret-plugin",
+      "snippet": "secret = {import:secret-plugin}"
+    },
+    {
+      "label": "seeder-plugin",
+      "description": "Copy-and-pasteable random seeds",
+      "url": "https://perchance.org/seeder-plugin",
+      "snippet": "seeder = {import:seeder-plugin}"
+    },
+    {
+      "label": "select-all-leaves-plugin",
+      "description": "Select all leaf nodes from a hierarchy",
+      "url": "https://perchance.org/select-all-leaves-plugin",
+      "snippet": "selectAllLeaves = {import:select-all-leaves-plugin}"
+    },
+    {
+      "label": "select-leaf-plugin",
+      "description": "Select a leaf node from a hierarchy",
+      "url": "https://perchance.org/select-leaf-plugin",
+      "snippet": "selectLeaf = {import:select-leaf-plugin}"
+    },
+    {
+      "label": "select-leaves-plugin",
+      "description": "Select many leaf nodes from a hierarchy",
+      "url": "https://perchance.org/select-leaves-plugin",
+      "snippet": "selectLeaves = {import:select-leaves-plugin}"
+    },
+    {
+      "label": "select-range-plugin",
+      "description": "Select a certain range of items from a list",
+      "url": "https://perchance.org/select-range-plugin",
+      "snippet": "selectRange = {import:select-range-plugin}"
+    },
+    {
+      "label": "select-until-plugin",
+      "description": "Select items until they meet requirements",
+      "url": "https://perchance.org/select-until-plugin",
+      "snippet": "selectUntil = {import:select-until-plugin}"
+    },
+    {
+      "label": "sum-odds-plugin",
+      "description": "Sum odds of a list",
+      "url": "https://perchance.org/sum-odds-plugin",
+      "snippet": "sumOdds = {import:sum-odds-plugin}"
+    },
+    {
+      "label": "super-fetch-plugin",
+      "description": "Fetch web content with fewer CORS issues",
+      "url": "https://perchance.org/super-fetch-plugin",
+      "snippet": "superFetch = {import:super-fetch-plugin}"
+    },
+    {
+      "label": "tabs-plugin",
+      "description": "Create tabbed UI",
+      "url": "https://perchance.org/tabs-plugin",
+      "snippet": "tabs = {import:tabs-plugin}"
+    },
+    {
+      "label": "tap-anywhere-plugin",
+      "description": "Trigger randomization with a tap anywhere",
+      "url": "https://perchance.org/tap-anywhere-plugin",
+      "snippet": "tapAnywhere = {import:tap-anywhere-plugin}"
+    },
+    {
+      "label": "tap-plugin",
+      "description": "Randomize specific outputs by tapping/clicking them",
+      "url": "https://perchance.org/tap-plugin",
+      "snippet": "tap = {import:tap-plugin}"
+    },
+    {
+      "label": "text-to-image-plugin",
+      "description": "Generate an image from a text description using AI",
+      "url": "https://perchance.org/text-to-image-plugin",
+      "snippet": "image = {import:text-to-image-plugin}"
+    },
+    {
+      "label": "text-to-speech-plugin",
+      "description": "Speak generated text",
+      "url": "https://perchance.org/text-to-speech-plugin",
+      "snippet": "speak = {import:text-to-speech-plugin}"
+    },
+    {
+      "label": "title-case-plugin",
+      "description": "Smarter title casing",
+      "url": "https://perchance.org/title-case-plugin",
+      "snippet": "titleCase = {import:title-case-plugin}"
+    },
+    {
+      "label": "tldraw-plugin",
+      "description": "Collaborative canvas for drawing",
+      "url": "https://perchance.org/tldraw-plugin",
+      "snippet": "tldraw = {import:tldraw-plugin}"
+    },
+    {
+      "label": "tooltip-plugin",
+      "description": "Generate tooltips on hover",
+      "url": "https://perchance.org/tooltip-plugin",
+      "snippet": "tooltip = {import:tooltip-plugin}"
+    },
+    {
+      "label": "tornado-plugin",
+      "description": "Randomly rotate elements",
+      "url": "https://perchance.org/tornado-plugin",
+      "snippet": "tornado = {import:tornado-plugin}"
+    },
+    {
+      "label": "typewriter-plugin",
+      "description": "Type text character-by-character",
+      "url": "https://perchance.org/typewriter-plugin",
+      "snippet": "type = {import:typewriter-plugin}"
+    },
+    {
+      "label": "upload-plugin",
+      "description": "Programmatically upload files to Perchance storage",
+      "url": "https://perchance.org/upload-plugin",
+      "snippet": "upload = {import:upload-plugin}"
+    },
+    {
+      "label": "url-params-plugin",
+      "description": "Detect and use URL parameters",
+      "url": "https://perchance.org/url-params-plugin",
+      "snippet": "url = {import:url-params-plugin}"
+    },
+    {
+      "label": "wheel-plugin",
+      "description": "Spinning wheel selector",
+      "url": "https://perchance.org/wheel-plugin",
+      "snippet": "makeWheel = {import:wheel-plugin}"
+    }
+  ]
+}

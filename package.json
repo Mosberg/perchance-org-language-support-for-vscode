@@ -3,6 +3,10 @@
   "displayName": "Perchance.org Language Support for VSCode",
   "description": "Add better description here.",
   "version": "0.0.1",
+  "publisher": "Mosberg",
+  "author": {
+    "name": "Mosberg"
+  },
   "engines": {
     "vscode": "^1.109.0"
   },
@@ -10,16 +14,26 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "perchance",
-      "aliases": ["Perchance", "perchance"],
-      "extensions": [".per",".perchance"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "perchance",
-      "scopeName": "source.perchance",
-      "path": "./syntaxes/perchance.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "perchance",
+        "aliases": [
+          "Perchance",
+          "perchance"
+        ],
+        "extensions": [
+          ".per",
+          ".perchance"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "perchance",
+        "scopeName": "source.perchance",
+        "path": "./syntaxes/perchance.tmLanguage.json"
+      }
+    ]
   }
 }

@@ -1,0 +1,207 @@
+{
+  "perchance": {
+    "core_docs": {
+      "welcome": "https://perchance.org/welcome",
+      "tutorial": "https://perchance.org/tutorial",
+      "advanced_tutorial": "https://perchance.org/advanced-tutorial",
+      "examples": "https://perchance.org/examples",
+      "generators": "https://perchance.org/generators",
+      "plugins": "https://perchance.org/plugins",
+      "templates": "https://perchance.org/templates",
+      "resources": "https://perchance.org/resources",
+      "upload": "https://perchance.org/upload",
+      "useful_generators": "https://perchance.org/useful-generators",
+      "twitter_bot": "https://perchance.org/create-a-twitter-bot",
+      "tumblr_bot": "https://perchance.org/create-a-tumblr-bot",
+      "keyboard_shortcuts": "https://perchance.org/perchance-keyboard-shortcuts",
+      "rpg_converter": "https://perchance.org/rpg-table-converter",
+      "font_importer": "https://perchance.org/custom-font-importer",
+      "faq": "https://perchance.org/perchance-faq",
+      "bugs": "https://perchance.org/known-bugs",
+      "diy_api": "https://perchance.org/diy-perchance-api",
+      "preprocessors": "https://perchance.org/preprocessors",
+      "probability_checker": "https://perchance.org/list-probability-distribution-checker"
+    },
+    "community": {
+      "forum": "https://lemmy.world/c/perchance",
+      "reddit": "https://www.reddit.com/r/perchance/comments/ha2fuu/finding_generators/"
+    },
+    "moss_generators": {
+      "text_rewriter": {
+        "main": "https://perchance.org/ai-text-rewriter-moss",
+        "edit": "https://perchance.org/ai-text-rewriter-moss#edit",
+        "nsfw": "https://perchance.org/ai-text-rewriter-moss-nsfw",
+        "nsfw_edit": "https://perchance.org/ai-text-rewriter-moss-nsfw#edit"
+      },
+      "code_generator": {
+        "main": "https://perchance.org/ai-code-generator-moss",
+        "edit": "https://perchance.org/ai-code-generator-moss#edit"
+      },
+      "image_generator": {
+        "main": "https://perchance.org/ai-text-to-image-generator-moss",
+        "edit": "https://perchance.org/ai-text-to-image-generator-moss#edit"
+      },
+      "character_generator": {
+        "main": "https://perchance.org/ai-character-generator-moss",
+        "edit": "https://perchance.org/ai-character-generator-moss#edit"
+      },
+      "pokemon_generator": {
+        "main": "https://perchance.org/ai-pokemon-generator-moss",
+        "edit": "https://perchance.org/ai-pokemon-generator-moss#edit"
+      },
+      "chat": {
+        "main": "https://perchance.org/ai-chat-moss",
+        "edit": "https://perchance.org/ai-chat-moss#edit"
+      },
+      "character_chat": {
+        "main": "https://perchance.org/ai-character-chat-moss",
+        "edit": "https://perchance.org/ai-character-chat-moss#edit"
+      }
+    },
+    "moss_plugins": {
+      "t2i_framework": {
+        "main": "https://perchance.org/t2i-framework-plugin-moss",
+        "edit": "https://perchance.org/t2i-framework-plugin-moss#edit"
+      }
+    },
+    "ui_meta": [
+      "https://perchance.org/tags-and-header-meta-data-example",
+      "https://perchance.org/curly-blocks-inside-square-blocks#edit",
+      "https://perchance.org/curly-brackets-within-square-brackets-alternatives-example#edit",
+      "https://perchance.org/indented-html-in-your-lists-example#edit",
+      "https://www.reddit.com/r/perchance/comments/gjevx1/text_orientation/",
+      "https://www.reddit.com/r/perchance/comments/v5p525/comment/ibm6j1m",
+      "https://perchance.org/custom-cursor-example#edit",
+      "https://perchance.org/click-to-hide-show-text-example#edit",
+      "https://perchance.org/spoiler-hidden-unfold-html-example#edit",
+      "https://perchance.org/metadata-example#edit",
+      "https://perchance.org/change-output-based-on-screen-size-example#edit",
+      "https://perchance.org/adjustable-vertical-split-example#edit"
+    ],
+    "mechanics": [
+      "https://perchance.org/selectmany-sumitems-example",
+      "https://perchance.org/roll-number-of-dice-based-on-previous-roll#edit",
+      "https://perchance.org/add-up-randomly-generated-numbers-example#edit",
+      "https://perchance.org/choose-a-list-based-on-a-selected-number#edit",
+      "https://perchance.org/three-percentages-example#edit",
+      "https://perchance.org/permutations-counter-example#edit",
+      "https://perchance.org/if-else-in-dynamic-odds-example#edit",
+      "https://perchance.org/consumable-list-with-dynamic-odds-example#edit",
+      "https://perchance.org/consumable-list-that-stays-consumed-until-refresh#edit",
+      "https://perchance.org/prevent-randomization-of-list-except-at-page-reload#edit",
+      "https://perchance.org/select-the-highest-number#edit",
+      "https://perchance.org/get-median-of-numbers-example#edit"
+    ],
+    "lists_hierarchies": [
+      "https://perchance.org/matching-pronouns-with-genders-example#edit",
+      "https://perchance.org/consumable-leaf-list-plugin-example#edit",
+      "https://perchance.org/consumable-list-with-nested-properties#edit",
+      "https://perchance.org/character-role-consumable-example#edit",
+      "https://perchance.org/combine-multiple-lists-into-one-consumable-list#edit",
+      "https://perchance.org/combining-list-that-contain-duplicates-without-selecting-duplicates#edit",
+      "https://perchance.org/filter-exclude-item-from-list#edit",
+      "https://perchance.org/filter-list-based-on-instance-properties-example#edit",
+      "https://perchance.org/filter-a-list-of-generated-instances-example#edit",
+      "https://perchance.org/first-n-items-of-random-sub-list#edit",
+      "https://perchance.org/select-item-from-same-index-position-in-two-lists#edit",
+      "https://perchance.org/using-name-of-selected-sublist-example#edit",
+      "https://www.reddit.com/r/perchance/comments/fognc2/how_to_pick_a_sublist_and_continue_to_draw_from_it/",
+      "https://perchance.org/array-of-instances-within-instance-example#edit",
+      "https://perchance.org/list-method-with-createinstance-example#edit",
+      "https://perchance.org/dynamically-creating-a-list-and-adding-items-to-it#edit"
+    ],
+    "ui_flows": [
+      "https://perchance.org/append-items-when-click-example#edit",
+      "https://perchance.org/output-history-example#edit",
+      "https://perchance.org/hide-output-until-click-example#edit",
+      "https://perchance.org/click-counter#edit",
+      "https://perchance.org/click-counter-2#edit",
+      "https://perchance.org/increment-counter-when-specific-items-is-selected-example#edit",
+      "https://perchance.org/increment-counter-caves-example#edit",
+      "https://perchance.org/user-controls-how-many-outputs-example#edit",
+      "https://perchance.org/multiple-outputs-random-number-of-items-example#edit",
+      "https://perchance.org/numbered-outputs-example-manual#edit",
+      "https://perchance.org/numbered-outputs-with-html-ol#edit",
+      "https://perchance.org/sequential-pages-example#edit",
+      "https://perchance.org/comments-plugin-goto-plugin-example#edit",
+      "https://perchance.org/pure-css-html-plugin-template#edit",
+      "https://perchance.org/remember-user-inputs-basic-example#edit",
+      "https://perchance.org/changing-drop-down-without-user-click-example#edit",
+      "https://perchance.org/multi-dropdown-user-provided-pattern#edit",
+      "https://perchance.org/generate-drop-down-input-from-hierarchical-list#edit",
+      "https://perchance.org/add-items-to-list-example#edit",
+      "https://perchance.org/randomize-on-tap-with-optional-subtap#edit",
+      "https://perchance.org/tap-image-to-randomize#edit"
+    ],
+    "user_input_data": [
+      "https://perchance.org/passing-variables-to-lists-example#edit",
+      "https://perchance.org/pass-variable-via-url-example?type=veg",
+      "https://perchance.org/seed-from-url-example#edit",
+      "https://perchance.org/generate-based-on-seed-keyword#edit",
+      "https://perchance.org/use-seeder-plugin-for-one-import-only-example#edit",
+      "https://perchance.org/add-user-inputs-to-list-example#edit",
+      "https://perchance.org/user-input-list-append-example#edit",
+      "https://perchance.org/user-input-list-example#edit",
+      "https://perchance.org/question-and-answer-example#edit"
+    ],
+    "visuals": [
+      "https://perchance.org/draw-a-river-example#edit",
+      "https://perchance.org/simple-random-images-example#edit",
+      "https://perchance.org/simple-random-image-example-cropped#edit",
+      "https://perchance.org/add-images-to-output#edit",
+      "https://perchance.org/random-image-with-name-example#edit",
+      "https://perchance.org/random-images-example#edit",
+      "https://perchance.org/image-layer-combiner-thumbnail-generator-example#edit",
+      "https://perchance.org/randomize-image-color-example#edit",
+      "https://perchance.org/custom-image-button-example#edit",
+      "https://perchance.org/custom-image-button-with-hover-example#edit",
+      "https://perchance.org/simple-mouse-hover-image-change-example#edit",
+      "https://perchance.org/generate-colored-text-example#edit",
+      "https://perchance.org/bingo-table-example#edit"
+    ],
+    "text_formatting": [
+      "https://perchance.org/commas-in-numbers-example#edit",
+      "https://perchance.org/acronym-from-words-example#edit",
+      "https://www.reddit.com/r/perchance/comments/gffusa/replace_certain_strings/",
+      "https://www.reddit.com/r/perchance/comments/sytskh/renaming_a_specific_set_of_events/",
+      "https://perchance.org/text-contains-text-example#edit"
+    ],
+    "math_utils": [
+      "https://perchance.org/dice-game-example#edit",
+      "https://perchance.org/damage-roll-function-example#edit",
+      "https://perchance.org/income-by-city-example#edit",
+      "https://perchance.org/fuel-consumption-distance#edit",
+      "https://www.reddit.com/r/perchance/comments/f8dau1/fahrenheit_to_celcius/fimoau9/",
+      "https://perchance.org/lineage-of-kings-example#edit",
+      "https://perchance.org/future-presidents-example#edit",
+      "https://perchance.org/randomize-at-regular-intervals-example#edit",
+      "https://perchance.org/p5js-basic-example"
+    ],
+    "state_flows": [
+      "https://perchance.org/different-result-on-first-load#edit",
+      "https://perchance.org/different-items-depending-on-num-clicks#edit",
+      "https://perchance.org/show-specific-text-on-first-load#edit",
+      "https://perchance.org/persistent-consumable-list-example#edit",
+      "https://perchance.org/track-selections-display-other-properties-of-selected-items-later#edit"
+    ],
+    "plugins_examples": [
+      "https://perchance.org/select-leaf-plugin-example#edit",
+      "https://perchance.org/consumable-leaf-list-plugin-example#edit",
+      "https://perchance.org/use-seeder-plugin-for-one-import-only-example#edit",
+      "https://perchance.org/tap-image-to-randomize#edit",
+      "https://perchance.org/comments-plugin-goto-plugin-example#edit",
+      "https://perchance.org/randomize-on-tap-with-optional-subtap#edit",
+      "https://www.reddit.com/r/perchance/comments/sdlgzf/comment/huf9ov2/"
+    ],
+    "external": [
+      "https://www.reddit.com/r/perchance/comments/ha2fuu/finding_generators/",
+      "https://www.reddit.com/r/perchance/comments/9mhnf1/generator_with_nothing/",
+      "https://www.reddit.com/r/perchance/comments/bgphrz/how_do_i_pass_variablesreferences_to_imported/elsgw5z",
+      "https://www.reddit.com/r/perchance/comments/g2uwh1/can_i_add_a_button_to_clear_generated_text_can/fo1ghye"
+    ],
+    "references": [
+      "https://perchance.fandom.com/wiki/Perchance_Methods",
+      "https://perchance.fandom.com/wiki/More_Examples"
+    ]
+  }
+}
