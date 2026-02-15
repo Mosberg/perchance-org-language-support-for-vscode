@@ -1,7 +1,7 @@
 {
   "name": "perchance-org-language-support-for-vscode",
   "displayName": "Perchance.org Language Support for VSCode",
-  "description": "Add better description here.",
+  "description": "Language Support for Perchance.org in Visual Studio Code.",
   "version": "0.0.1",
   "publisher": "Mosberg",
   "author": {
