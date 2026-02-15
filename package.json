@@ -14,7 +14,14 @@
   },
   "icon": "./assets/img/favicon-1024x1024-white-bg.png",
   "main": "./src/extension.js",
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:perchance",
+    "onCommand:perchance.managePlugins",
+    "onCommand:perchance.createGenerator",
+    "onCommand:perchance.toggleWrap",
+    "onCommand:perchance.foldAllLists",
+    "onCommand:perchance.unfoldAllLists"
+  ],
   "engines": {
     "vscode": "^1.109.0"
   },
@@ -22,6 +29,28 @@
     "Programming Languages"
   ],
   "contributes": {
+    "commands": [
+      {
+        "command": "perchance.managePlugins",
+        "title": "Perchance: Insert Plugin"
+      },
+      {
+        "command": "perchance.createGenerator",
+        "title": "Perchance: Create Generator"
+      },
+      {
+        "command": "perchance.toggleWrap",
+        "title": "Perchance: Toggle Word Wrap"
+      },
+      {
+        "command": "perchance.foldAllLists",
+        "title": "Perchance: Fold All Lists"
+      },
+      {
+        "command": "perchance.unfoldAllLists",
+        "title": "Perchance: Unfold All Lists"
+      }
+    ],
     "languages": [
       {
         "id": "perchance",
@@ -49,6 +78,61 @@
         "language": "perchance",
         "path": "./assets/snippets/perchance.json"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Perchance",
+      "properties": {
+        "perchance.format.indentSize": {
+          "type": "number",
+          "default": 2,
+          "minimum": 1,
+          "description": "Spaces per indentation level when formatting lists."
+        },
+        "perchance.format.trimTrailingWhitespace": {
+          "type": "boolean",
+          "default": true,
+          "description": "Trim trailing whitespace when formatting."
+        },
+        "perchance.format.normalizeListIndent": {
+          "type": "boolean",
+          "default": true,
+          "description": "Normalize list item indentation to the configured indent size."
+        },
+        "perchance.lists.enableDiagnostics": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable diagnostics for unknown list references."
+        },
+        "perchance.lists.checkDuplicateNames": {
+          "type": "boolean",
+          "default": true,
+          "description": "Warn on duplicate top-level list names."
+        },
+        "perchance.lists.checkIndentation": {
+          "type": "boolean",
+          "default": true,
+          "description": "Warn on mixed tabs/spaces or odd indentation."
+        },
+        "perchance.lists.checkSingleEqualsInIf": {
+          "type": "boolean",
+          "default": true,
+          "description": "Warn when if/else conditions use = instead of ==."
+        },
+        "perchance.plugins.openUrlAfterInsert": {
+          "type": "boolean",
+          "default": false,
+          "description": "Prompt to open plugin docs after inserting a plugin snippet."
+        },
+        "perchance.generators.defaultDownloadMode": {
+          "type": "string",
+          "enum": [
+            "lists",
+            "full"
+          ],
+          "default": "lists",
+          "description": "Default download mode when creating a generator from perchance.org."
+        }
+      }
+    }
   }
 }

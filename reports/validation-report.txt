@@ -1,0 +1,47 @@
+Perchance example validation report (top 10 by size)
+
+== HTML ==
+- assets/examples/generators/ai-character-chat-moss/ai-character-chat-moss.html (888.1 KB)
+  file: Script tag count mismatch (open 29, close 22) [script-tag]
+  file: Style tag count mismatch (open 6, close 5) [style-tag]
+  file: HTML comment count mismatch (open 42, close 45) [html-comment]
+- assets/examples/generators/ai-chat-moss/ai-chat-moss.html (165.2 KB)
+  OK
+- assets/examples/generators/ai-text-rewriter-moss-nsfw/ai-text-rewriter-moss-nsfw.html (33.6 KB)
+  OK
+- assets/examples/generators/ai-text-converter-and-rewriter-moss-nsfw/ai-text-converter-and-rewriter-moss-nsfw.html (25.9 KB)
+  OK
+- assets/examples/generators/ai-text-rewriter-moss/ai-text-rewriter-moss.html (23.2 KB)
+  OK
+- assets/examples/generators/ai-text-to-nsfw-rewriter-moss/ai-text-to-nsfw-rewriter-moss.html (22.8 KB)
+  OK
+- assets/examples/generators/ai-minecraft-fabric-villager-api/ai-minecraft-fabric-villager-api.html (18.9 KB)
+  OK
+- assets/examples/generators/ai-code-generator-moss/ai-code-generator-moss.html (12.6 KB)
+  OK
+- assets/examples/plugins/t2i-framework-plugin-moss/t2i-framework-plugin-moss.html (2.9 KB)
+  OK
+- assets/examples/generators/ai-character-generator-moss/ai-character-generator-moss.html (0.4 KB)
+  OK
+
+== PERCHANCE ==
+- assets/examples/generators/ai-text-rewriter-moss-nsfw/ai-text-rewriter-moss-nsfw.perchance (196.0 KB)
+  OK
+- assets/examples/plugins/t2i-framework-plugin-moss/t2i-framework-plugin-moss.perchance (112.4 KB)
+  line 1844: List header appears after HTML start [list-after-html]
+- assets/examples/generators/ai-chat-moss/ai-chat-moss.perchance (94.5 KB)
+  OK
+- assets/examples/generators/ai-text-to-image-generator-moss/ai-text-to-image-generator-moss.perchance (81.2 KB)
+  OK
+- assets/examples/generators/ai-character-generator-moss/ai-character-generator-moss.perchance (58.2 KB)
+  OK
+- assets/examples/generators/ai-character-chat-moss/ai-character-chat-moss.perchance (44.0 KB)
+  OK
+- assets/examples/plugins/t2i-styles-moss/t2i-styles-moss.perchance (41.3 KB)
+  OK
+- assets/examples/generators/ai-text-rewriter-moss/ai-text-rewriter-moss.perchance (19.3 KB)
+  OK
+- assets/examples/generators/ai-minecraft-fabric-villager-api/ai-minecraft-fabric-villager-api.perchance (17.9 KB)
+  OK
+- assets/examples/generators/ai-pokemon-generator-moss/ai-pokemon-generator-moss.perchance (17.4 KB)
+  OK
