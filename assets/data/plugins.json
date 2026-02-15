@@ -12,7 +12,7 @@
       "description": "Improved a/an handling",
       "url": "https://perchance.org/a-an-plugin",
       "url_edit": "https://perchance.org/a-an-plugin#edit",
-      "snippet": "aAn = {import:tap-plugin}"
+      "snippet": "aAn = {import:a-an-plugin}"
     },
     {
       "label": "ai-text-plugin",

@@ -69,7 +69,7 @@
   },
   "Perchance dynamic odds": {
     "prefix": "odds",
-    "body": ["${1:item} ^[${2:condition == true}]"],
+    "body": ["${1:item}} ^[${2:condition == true}]"],
     "description": "Dynamic odds condition"
   },
   "Perchance plugin import": {
@@ -87,5 +87,295 @@
       "</main>"
     ],
     "description": "Basic HTML output template"
+  },
+  "Perchance list with odds": {
+    "prefix": "list-odds",
+    "body": [
+      "${1:itemName}",
+      "  70% ${2:common}",
+      "  20% ${3:uncommon}",
+      "  10% ${4:rare}"
+    ],
+    "description": "List with weighted probability odds"
+  },
+  "Perchance consumable list": {
+    "prefix": "consumable",
+    "body": [
+      "consumable = {import:consumable-list-loop-plugin}",
+      "",
+      "${1:items}",
+      "  ${2:item1}",
+      "  ${3:item2}",
+      "",
+      "$output",
+      "  [consumable([items])]"
+    ],
+    "description": "Consumable list that resets when empty"
+  },
+  "Perchance tap plugin": {
+    "prefix": "tap",
+    "body": [
+      "tap = {import:tap-plugin}",
+      "",
+      "${1:item}",
+      "  ${2:value1}",
+      "  ${3:value2}",
+      "",
+      "$output",
+      "  [tap([item])]"
+    ],
+    "description": "Tap plugin to randomize by clicking output"
+  },
+  "Perchance seeder plugin": {
+    "prefix": "seeder",
+    "body": [
+      "seeder = {import:seeder-plugin}",
+      "",
+      "${1:list}",
+      "  ${2:item1}",
+      "  ${3:item2}",
+      "",
+      "$output",
+      "  [seeder([list])]"
+    ],
+    "description": "Seeder plugin for copy-paste random seeds"
+  },
+  "Perchance KV storage": {
+    "prefix": "kv-store",
+    "body": [
+      "kv = {import:kv-plugin}",
+      "",
+      "$output",
+      "  Current value: [kv(\"${1:key}\", \"${2:default}\")] ${3|}",
+      "  [kv(\"${1:key}\", \"${2:default}\") = \"$input()\"]"
+    ],
+    "description": "Key-value storage using kv-plugin"
+  },
+  "Perchance hierarchical list": {
+    "prefix": "hierarchy",
+    "body": [
+      "${1:category}",
+      "  ${2:parent1}",
+      "    ${3:child1}",
+      "    ${4:child2}",
+      "  ${5:parent2}",
+      "    ${6:child3}",
+      "    ${7:child4}"
+    ],
+    "description": "Hierarchical list structure"
+  },
+  "Perchance multiline choice": {
+    "prefix": "choice-multi",
+    "body": [
+      "{",
+      "  ${1:option1}",
+      "  |",
+      "  ${2:option2}",
+      "  |",
+      "  ${3:option3}",
+      "}"
+    ],
+    "description": "Multi-line curly choice block"
+  },
+  "Perchance if-else logic": {
+    "prefix": "if-else",
+    "body": [
+      "${1:result}() =>",
+      "  if (${2:condition}) {",
+      "    return \"${3:true case}\";",
+      "  }",
+      "  return \"${4:false case}\";"
+    ],
+    "description": "If-else logic in function"
+  },
+  "Perchance dice plugin": {
+    "prefix": "dice",
+    "body": [
+      "dice = {import:dice-plugin}",
+      "",
+      "$output",
+      "  Roll [dice(${1:1d20})]: [dice(${1:1d20})]"
+    ],
+    "description": "Dice roller using dice-plugin"
+  },
+  "Perchance filter list": {
+    "prefix": "filter",
+    "body": [
+      "filter = {import:filter-list-plugin}",
+      "",
+      "${1:items}",
+      "  ${2:item1}",
+      "  ${3:item2}",
+      "",
+      "$output",
+      "  [filter([items], \"${4:search term}\")]"
+    ],
+    "description": "Filter list dynamically"
+  },
+  "Perchance make table": {
+    "prefix": "table",
+    "body": [
+      "makeTable = {import:make-table-plugin}",
+      "",
+      "tableData",
+      "  | ${1:Column 1} | ${2:Column 2} |",
+      "  |---|---|",
+      "  | [[item]] | [[value]] |",
+      "",
+      "$output = [makeTable(tableData)]"
+    ],
+    "description": "Generate HTML table with make-table-plugin"
+  },
+  "Perchance string function": {
+    "prefix": "string-fn",
+    "body": [
+      "${1:functionName}(${2:text}) =>",
+      "  return ${2:text}",
+      "    .${3:toLowerCase}()",
+      "    .${4:replaceAll}(\"${5:from}\", \"${6:to}\");"
+    ],
+    "description": "String manipulation function"
+  },
+  "Perchance array join": {
+    "prefix": "array-join",
+    "body": [
+      "${1:joinedList}() =>",
+      "  let arr = [\"${2:item1}\", \"${3:item2}\", \"${4:item3}\"];",
+      "  return arr.join(\"${5:, }\")"
+    ],
+    "description": "Join array items into string"
+  },
+  "Perchance remember plugin": {
+    "prefix": "remember",
+    "body": [
+      "remember = {import:remember-plugin}",
+      "",
+      "savedValue = ${1:initial}",
+      "",
+      "$output",
+      "  Saved: [remember(savedValue)]",
+      "  [remember(savedValue) = ${2:new value}]"
+    ],
+    "description": "Remember plugin for persistent storage"
+  },
+  "Perchance title case": {
+    "prefix": "title-case",
+    "body": [
+      "title = {import:title-case-plugin}",
+      "",
+      "$output",
+      "  [title(${1:text})]"
+    ],
+    "description": "Convert text to title case"
+  },
+  "Perchance a/an plugin": {
+    "prefix": "a-an",
+    "body": [
+      "aAn = {import:a-an-plugin}",
+      "",
+      "noun",
+      "  ${1:apple}",
+      "  ${2:banana}}",
+      "",
+      "$output",
+      "  [aAn()] [[noun]]"
+    ],
+    "description": "Auto a/an grammar with a-an-plugin"
+  },
+  "Perchance be plugin": {
+    "prefix": "be",
+    "body": [
+      "be = {import:be-plugin}",
+      "",
+      "subject",
+      "  ${1:I|He|They}}",
+      "",
+      "$output",
+      "  [[subject]] [be()] [[adjective]]"
+    ],
+    "description": "Auto is/are conjugation with be-plugin"
+  },
+  "Perchance dynamic import": {
+    "prefix": "dynamic-import",
+    "body": [
+      "dynamicImport = {import:dynamic-import-plugin}",
+      "",
+      "${1:gen}} = [dynamicImport(\"${2:generator-name}\")]"
+    ],
+    "description": "Lazy-load generators with dynamic-import-plugin"
+  },
+  "Perchance section with region": {
+    "prefix": "region",
+    "body": [
+      "// #region ${1:Section Name}",
+      "${2:// Content goes here}",
+      "// #endregion"
+    ],
+    "description": "Code folding region markers"
+  },
+  "Perchance $variables": {
+    "prefix": "variables",
+    "body": [
+      "$variables",
+      "  ${1:varName}} = \"${2:initial value}\"",
+      "  ${3:anotherVar}} = [${4:list}}]"
+    ],
+    "description": "Define global variables"
+  },
+  "Perchance select leaf": {
+    "prefix": "select-leaf",
+    "body": [
+      "selectLeaf = {import:select-leaf-plugin}",
+      "",
+      "tree",
+      "  ${1:branch1}}",
+      "    ${2:leaf1}}",
+      "    ${3:leaf2}}",
+      "  ${4:branch2}}",
+      "    ${5:leaf3}}",
+      "",
+      "$output",
+      "  [selectLeaf(tree)]"
+    ],
+    "description": "Select leaf node from hierarchy"
+  },
+  "Perchance image plugin": {
+    "prefix": "image",
+    "body": [
+      "image = {import:image-plugin}",
+      "",
+      "$output",
+      "  [image(\"${1:https://example.com/image.jpg}\")]"
+    ],
+    "description": "Embed images with image-plugin"
+  },
+  "Perchance background image": {
+    "prefix": "bg-image",
+    "body": [
+      "bgImage = {import:background-image-plugin}",
+      "",
+      "$output = [bgImage(\"${1:https://example.com/background.jpg}\")]"
+    ],
+    "description": "Set background image"
+  },
+  "Perchance button pattern": {
+    "prefix": "button",
+    "body": [
+      "<button onclick=\"update();\" class=\"${1:btn-primary}}>",
+      "  ${2:Generate}",
+      "</button>"
+    ],
+    "description": "Interactive button with onclick handler"
+  },
+  "Perchance style section": {
+    "prefix": "style",
+    "body": [
+      "<style>",
+      "  body { ${1:font-family: sans-serif; margin: 2rem;}} }",
+      "  .output { ${2:font-size: 1.25rem; margin: 1rem 0;}} }",
+      "  button { ${3:padding: 0.5rem 1rem;}} }",
+      "</style>"
+    ],
+    "description": "CSS styling section"
   }
 }

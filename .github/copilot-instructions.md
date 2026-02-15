@@ -15,15 +15,15 @@ Enhance Copilot’s ability to assist with Perchance.org development by providin
 
 ## Best Practices
 
-- Be accurate and cite sources. Use index links for any Perchance behavior, plugin, or example you mention.
-- Keep answers small and actionable. Provide a short explanation plus a minimal, working snippet when code is requested.
-- Provide focused links. If multiple matches exist, list only the top 3 and explain why they are relevant.
-- Ask only when needed. If the request is ambiguous, ask one clarifying question and propose a default assumption.
-- Avoid inventing features or plugins. If the index does not cover it, link to core docs and state the gap clearly.
-- Prefer stable, official sources. Use Perchance.org links over community links unless the community link is the only match.
-- Use consistent naming. Match plugin labels and snippets from the plugin index verbatim.
-- Be explicit about constraints. If a feature requires a plugin, say so and include the import snippet.
-- Keep updates local. If the user asks for changes in the workspace, modify only the relevant files and do not reformat unrelated content.
+- Be accurate and cite sources; include index links for any Perchance behavior, plugin, or example you mention.
+- Keep answers small and actionable: short explanation + minimal working snippet when code is requested.
+- Provide focused links; if multiple matches exist, list the top 3 and state why each is relevant.
+- Ask only when needed; if ambiguous, ask one clarifying question and propose a default assumption.
+- Avoid inventing features or plugins; if the index lacks coverage, link core docs and note the gap.
+- Prefer stable, official sources; use Perchance.org links over community links unless community is the only match.
+- Use consistent naming; match plugin labels and snippets from the plugin index verbatim.
+- Be explicit about constraints; if a feature requires a plugin, say so and include the import snippet.
+- Keep updates local; modify only relevant files and avoid reformatting unrelated content.
 
 ## Response Formatting
 

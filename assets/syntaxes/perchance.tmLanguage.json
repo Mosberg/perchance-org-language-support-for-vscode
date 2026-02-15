@@ -9,6 +9,10 @@
       "match": "//.*$"
     },
     {
+      "name": "meta.dynamic-odds.perchance",
+      "match": "\\^\\[[^\\]]*\\]"
+    },
+    {
       "name": "meta.random-choice.perchance",
       "begin": "\\{",
       "beginCaptures": {
@@ -22,6 +26,10 @@
         {
           "name": "punctuation.separator.choice.perchance",
           "match": "\\|"
+        },
+        {
+          "name": "keyword.operator.perchance",
+          "match": "^\\d+%"
         },
         {
           "include": "#strings"
@@ -68,7 +76,7 @@
           "patterns": [
             {
               "name": "constant.character.escape.perchance",
-              "match": "\\\\."
+              "match": "\\\\([\\\\\"'ntrfbv]|u[0-9A-Fa-f]{4})"
             }
           ]
         },
@@ -79,7 +87,7 @@
           "patterns": [
             {
               "name": "constant.character.escape.perchance",
-              "match": "\\\\."
+              "match": "\\\\([\\\\\"'ntrfbv]|u[0-9A-Fa-f]{4})"
             }
           ]
         }

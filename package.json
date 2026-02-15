@@ -13,6 +13,10 @@
     "name": "Mosberg"
   },
   "icon": "./assets/img/favicon-1024x1024-white-bg.png",
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onLanguage:perchance"
+  ],
   "engines": {
     "vscode": "^1.109.0"
   },
@@ -40,6 +44,12 @@
         "language": "perchance",
         "scopeName": "source.perchance",
         "path": "./assets/syntaxes/perchance.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "perchance",
+        "path": "./assets/snippets/perchance.json"
       }
     ]
   }

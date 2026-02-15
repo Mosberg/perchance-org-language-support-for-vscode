@@ -1,95 +1,148 @@
 # Perchance.org Language Support for VSCode
 
-This is the README for your extension "perchance-org-language-support-for-vscode". After writing up a brief description, we recommend including the following sections.
+This extension provides comprehensive language support for [Perchance.org](https://perchance.org) generators, enabling productive development with syntax highlighting, intelligent code completion, and real-time error checking.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
 ### Declarative Language Features
 
-**Declarative features are defined in configuration files and include basic functionalities such as**:
-
-- Syntax highlighting
-
-- Snippet completion
-
-- Bracket matching, autoclosing, and autosurrounding
-
-- Comment toggling
-
-- Auto-indentation
-
-- Folding (based on markers)
+- **Syntax highlighting** for Perchance lists, choices, numbers, strings, references, and dynamic odds
+- **Snippet completion** for lists, $output, imports, plugins, and HTML scaffolds
+- **Bracket matching, autoclosing, and autosurrounding** for `{}`, `[]`, `()`
+- **Comment toggling** for single-line and block comments
+- **Auto-indentation** for list blocks with smart on-enter rules
+- **Folding support** with indentation and `// #region` / `// #endregion` markers
 
 ### Programmatic Language Features
 
-**Programmatic features are more dynamic and include**:
+- **Auto-completion** for list references (`[[name]]`), plugin imports (`{import:plugin-name}`), and choice patterns
+- **Error checking** with warnings for unknown list references
+- **Jump-to-definition** using Ctrl+Click on list references
+- **Hover information** displaying list details and plugin documentation links
+- **Code formatting** normalizing list item indentation to 2 spaces
 
-- Auto-completion
+## Quick Start
 
-- Error checking
+1. Install the extension
+2. Create or open a `.per` file
+3. Start creating your generator with list syntax:
 
-- Jump-to-definition
+```
+adjective
+  beautiful
+  ugly
+  clever
 
-- Hover information
+noun
+  cat
+  dog
+  bird
 
-- Code formatting and refactoring
+[$output]
+[[adjective]] [[noun]]
+```
 
-## Requirements
+## Plugin Support
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+The extension provides auto-completion and documentation for 60+ official Perchance plugins. Type `{import:` to see available plugins, or visit the [Plugin Index](https://perchance.org/plugins).
 
-## Extension Settings
+## Code Snippets
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+The extension includes 30+ snippets to accelerate development. Type any prefix to trigger:
 
-For example:
+### Core Patterns
 
-This extension contributes the following settings:
+- `list` – Create a basic list
+- `list=` – Create a shorthand list assignment
+- `output` – Create an output list
+- `choice` – Inline random choice
+- `choice-multi` – Multi-line choice block
+- `list-odds` – List with weighted odds
 
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
+### Advanced Features
 
-## Known Issues
+- `list-fn` – Function-based list
+- `list-async-fn` – Async function list
+- `if-else` – Conditional logic
+- `string-fn` – String manipulation
+- `array-join` – Join array items
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### Imports & Configuration
+
+- `import` – Import generator or plugin
+- `meta` – Define generator metadata
+- `preprocess` – Define custom preprocessor
+- `variables` – Declare global variables
+- `region` – Code folding marker
+
+### Plugin Integration
+
+- `plugin` – Generic plugin import
+- `consumable` – Consumable list template
+- `tap` – Tap/click interactive pattern
+- `seeder` – Copy-paste seed support
+- `kv-store` – Key-value storage
+- `dice` – Dice roller pattern
+- `filter` – Dynamic list filtering
+- `table` – HTML table generation
+- `remember` – Persistent storage
+- `a-an` – Automatic a/an grammar
+- `be` – Auto is/are conjugation
+- `title-case` – Title casing
+- `image` – Image embedding
+- `bg-image` – Background image
+
+### HTML & Styling
+
+- `html-template` – Basic HTML scaffold
+- `button` – Interactive button
+- `style` – CSS styling section
+- `hierarchy` – Hierarchical list structure
+- `dynamic-import` – Lazy-load generators
+
+## Templates
+
+The extension includes 16 ready-to-use templates demonstrating common patterns:
+
+| Template                 | Purpose                                 |
+| ------------------------ | --------------------------------------- |
+| **Basic Generator**      | Simple HTML with button                 |
+| **Blank Generator**      | Lists-only template                     |
+| **Centered Minimal**     | Centered soft-background layout         |
+| **Dark Card**            | Dark mode card style                    |
+| **Markdown**             | Markdown rendering with markdown-plugin |
+| **Weighted Choices**     | Probability-weighted selections         |
+| **Character Generator**  | Hierarchical character sheet            |
+| **Dice Roller**          | d20/dice-plugin example                 |
+| **Data Table**           | HTML table generation                   |
+| **NPC Generator**        | Detailed NPC with personality traits    |
+| **Interactive Story**    | Branching narrative elements            |
+| **Consumable Inventory** | Item system with consumable plugin      |
+| **Tap Interactive**      | Click-to-randomize elements             |
+| **Seed Tracker**         | Reproducible results with seeder-plugin |
+| **Text-to-Speech**       | Audio generation demo                   |
+| **Multi-Column Layout**  | Grid-based display                      |
+| **Image Gallery**        | Image showcase format                   |
+
+## References
+
+- [Perchance Tutorial](https://perchance.org/tutorial) – Learn the basics
+- [Advanced Tutorial](https://perchance.org/advanced-tutorial) – Dive deeper
+- [Plugin Index](https://perchance.org/plugins) – Browse all plugins
+- [Official Resources](https://perchance.org/resources) – Complete documentation
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
+Initial release with full language support for Perchance:
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- Syntax highlighting and snippets
+- List reference completion and diagnostics
+- Plugin auto-completion with documentation
+- Code formatting and folding
+- 30+ snippets for common patterns
+- 16 ready-to-use generator templates
+- Dynamic odds, consumable, and plugin patterns
 
 **Enjoy!**

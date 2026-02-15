@@ -29,6 +29,78 @@
       "label": "Markdown Template",
       "description": "Markdown output using markdown-plugin",
       "content": "markdown = {import:markdown-plugin}\n\n$output = [markdown(markdownText)]\n\nmarkdownText\n  # Markdown Output\n  - A [adjective] [animal]\n  - A [adjective] [animal]\n\nadjective\n  bright\n  drifting\n  gentle\n\nanimal\n  fox\n  owl\n  turtle\n"
+    },
+    {
+      "id": "weighted-choices",
+      "label": "Weighted Random Choices",
+      "description": "Demonstrates probability-weighted selections",
+      "content": "$output\n  The {70% rare|20% uncommon|10% legendary} [noun] appears.\n\nnoun\n  sword\n  shield\n  amulet\n  ring\n\n<main>\n  <h1>Weighted Generator</h1>\n  <p>[output]</p>\n  <button onclick=\"update();\">Generate</button>\n</main>\n"
+    },
+    {
+      "id": "character-sheet",
+      "label": "Character Generator",
+      "description": "Hierarchical character with traits and stats",
+      "content": "$output = [character]\n\ncharacter\n  Name: [charName]\n  Race: [race]\n  Class: [class]\n  Trait: [trait]\n\ncharName\n  Aldric\n  Mira\n  Kael\n  Lysandra\n\nrace\n  Human\n  Elf\n  Dwarf\n  Halfling\n\nclass\n  Warrior\n  Mage\n  Rogue\n  Cleric\n\ntrait\n  {Bold|Cunning|Noble|Brave}\n\n<main>\n  <h1>Character Generator</h1>\n  <pre class=\"output\">[output]</pre>\n  <button onclick=\"update();\">Generate Character</button>\n</main>\n\n<style>\n  body { font-family: Georgia; margin: 2rem; }\n  .output { background: #f0f0f0; padding: 1rem; margin: 1rem 0; }\n  pre { font-size: 1.1rem; }\n</style>\n"
+    },
+    {
+      "id": "die-roller",
+      "label": "Dice Roller with Dice Plugin",
+      "description": "Roll dice using dice-plugin",
+      "content": "dice = {import:dice-plugin}\n\n$output\n  Roll: [result]\n\nresult\n  [dice(1d20)] on d20\n  [dice(2d8+3)] on 2d8+3\n  [dice(1d100)] on d100\n\n<main class=\"roller\">\n  <h1>Dice Roller</h1>\n  <p>[output]</p>\n  <button onclick=\"update();\">Roll Dice</button>\n</main>\n\n<style>\n  body { display: grid; place-items: center; min-height: 100vh; background: #2c3e50; color: #fff; }\n  .roller { text-align: center; padding: 2rem; background: #34495e; border-radius: 8px; }\n  button { background: #e74c3c; color: #fff; border: none; padding: 0.75rem 1.5rem; font-size: 1rem; }\n</style>\n"
+    },
+    {
+      "id": "data-table",
+      "label": "Data Table Generator",
+      "description": "Generate data in table format",
+      "content": "makeTable = {import:make-table-plugin}\n\n$output = [makeTable(tableData)]\n\ntableData\n  | Item | Rarity | Effect |\n  |------|--------|--------|\n  | [item] | [rarity] | [effect] |\n  | [item] | [rarity] | [effect] |\n\nitem\n  Sword\n  Shield\n  Potion\n  Ring\n\nrarity\n  Common\n  Uncommon\n  Rare\n  Legendary\n\neffect\n  +1 Attack\n  +1 Defense\n  Restore Health\n  Grant Magic\n\n<main>\n  <h1>Item Table</h1>\n  <div class=\"table-output\">[output]</div>\n  <button onclick=\"update();\">Generate Table</button>\n</main>\n\n<style>\n  body { font-family: sans-serif; margin: 2rem; }\n  table { border-collapse: collapse; margin: 1rem 0; }\n  th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; }\n  th { background: #34495e; color: #fff; }\n</style>\n"
+    },
+    {
+      "id": "npc-generator",
+      "label": "NPC Generator",
+      "description": "Generate detailed NPC characters with personality",
+      "content": "$output = [npcCard]\n\nnpcCard\n  **[firstName] [lastName]**\n  [race] [class]\n  Personality: [trait] and [personality]\n  Quest Hook: [questHook]\n\nfirstName\n  Aldric\n  Mira\n  Kael\n  Celeste\n  Thorne\n\nlastName\n  Ashford\n  Darkwood\n  Winterbourne\n  Ironheart\n  Swiftwind\n\nrace\n  Human\n  Elf\n  Dwarf\n  Halfling\n  Tiefling\n\nclass\n  Warrior\n  Mage\n  Rogue\n  Cleric\n  Bard\n\ntrait\n  Honorable\n  Cunning\n  Cheerful\n  Brooding\n  Sarcastic\n\npersonality\n  witty\n  cautious\n  impulsive\n  loyal\n  deceptive\n\nquestHook\n  seeking a lost artifact\n  running from their past\n  guarding a secret\n  searching for redemption\n  learning ancient magic\n\n<main>\n  <h1>NPC Generator</h1>\n  <div class=\"npc-card\">[output]</div>\n  <button onclick=\"update();\">Generate NPC</button>\n</main>\n\n<style>\n  body { font-family: Georgia, serif; margin: 2rem; background: #1a1a1a; color: #f0f0f0; }\n  .npc-card { background: #2a2a2a; border-left: 4px solid #d4af37; padding: 1.5rem; margin: 1rem 0; }\n</style>\n"
+    },
+    {
+      "id": "story-generator",
+      "label": "Interactive Story",
+      "description": "Story template with branching narrative elements",
+      "content": "$output = [story]\n\nstory\n  [protagonist] was [location] when [incident]. \n  They had to [challenge], but [twist].\n  In the end, they [resolution].\n\nprotagonist\n  A merchant\n  A scholar\n  A warrior\n  A wanderer\n  A thief\n\nlocation\n  in the forest\n  at the castle\n  in the village\n  by the shore\n  in the mountains\n\nincident\n  a stranger arrived\n  danger appeared\n  a message came\n  magic awakened\n  chaos broke out\n\nchallenge\n  face their fears\n  solve a riddle\n  defeat an enemy\n  make a sacrifice\n  gather allies\n\ntwist\n  it wasn't what it seemed\n  everything changed\n  help came from unexpected places\n  they discovered the truth\n  betrayal struck\n\nresolution\n  found what they sought\n  understood themselves better\n  changed the world\n  saved the day\n  became a legend\n\n<main>\n  <h1>Story Generator</h1>\n  <div class=\"story-container\">[output]</div>\n  <button onclick=\"update();\">Generate Story</button>\n</main>\n\n<style>\n  body { font-family: 'Georgia', serif; margin: 0; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }\n  .story-container { background: white; padding: 2rem; border-radius: 8px; line-height: 1.8; font-size: 1.1rem; max-width: 600px; margin: 1rem auto; }\n  button { background: #764ba2; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 4px; font-size: 1rem; cursor: pointer; }\n</style>\n"
+    },
+    {
+      "id": "consumable-inventory",
+      "label": "Consumable Inventory System",
+      "description": "Inventory with consumable items that deplete",
+      "content": "consumable = {import:consumable-list-loop-plugin}\n\ninventory\n  Health Potion\n  Mana Potion\n  Antidote\n  Escape Rope\n  Mystery Scroll\n\n$output\n  You have: [consumable([inventory])]\n\n<main>\n  <h1>Inventory</h1>\n  <div class=\"inventory\">\n    <p>[output]</p>\n    <p class=\"hint\">(Items reset when depleted)</p>\n  </div>\n  <button onclick=\"update();\">Use Item</button>\n</main>\n\n<style>\n  body { font-family: monospace; margin: 2rem; background: #222; color: #0f0; }\n  .inventory { background: #111; padding: 1rem; margin: 1rem 0; border: 1px solid #0f0; }\n  button { background: #0f0; color: #000; padding: 0.5rem 1rem; font-weight: bold; }\n</style>\n"
+    },
+    {
+      "id": "tap-interactive",
+      "label": "Tap/Click Interactive Elements",
+      "description": "Elements that randomize on click using tap-plugin",
+      "content": "tap = {import:tap-plugin}\n\ncharacteristic\n  Kind-hearted\n  Mysterious\n  Rebellious\n  Wise\n  Cheerful\n\npower\n  Healing\n  Telepathy\n  Strength\n  Invisibility\n  Time Manipulation\n\n$output\n  [tap([characteristic])] | [tap([power])]\n\n<main>\n  <h1>Click to Randomize</h1>\n  <div class=\"interactive\">\n    <p>[output]</p>\n    <p class=\"hint\">Click the text above to randomize</p>\n  </div>\n</main>\n\n<style>\n  body { display: grid; place-items: center; min-height: 100vh; font-family: sans-serif; background: #f0f0f0; }\n  .interactive { text-align: center; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }\n  p { font-size: 1.25rem; margin: 1rem 0; }\n  .hint { font-size: 0.9rem; color: #666; font-style: italic; }\n</style>\n"
+    },
+    {
+      "id": "seed-tracker",
+      "label": "Seed Tracker with Seeder Plugin",
+      "description": "Share reproducible outputs using seeder-plugin",
+      "content": "seeder = {import:seeder-plugin}\n\nname\n  Alex\n  Jordan\n  Casey\n  Morgan\n  Riley\n\noccupation\n  Artist\n  Engineer\n  Teacher\n  Chef\n  Musician\n\n$output\n  [seeder([name])] the [occupation]\n\n<main>\n  <h1>Seeded Generator</h1>\n  <div class=\"seeded\">\n    <div class=\"output\">[output]</div>\n    <p class=\"seed-info\">(Seed appears below - share it for reproducible results)</p>\n  </div>\n  <button onclick=\"update();\">Generate</button>\n</main>\n\n<style>\n  body { margin: 2rem; font-family: sans-serif; }\n  .seeded { background: #f9f9f9; padding: 1.5rem; border-radius: 4px; }\n  .output { font-size: 1.25rem; margin: 1rem 0; font-weight: bold; }\n  .seed-info { color: #666; font-size: 0.9rem; }\n  button { background: #4CAF50; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; }\n</style>\n"
+    },
+    {
+      "id": "text-to-speech",
+      "label": "Text-to-Speech Generator",
+      "description": "Generate and speak text using text-to-speech-plugin",
+      "content": "speak = {import:text-to-speech-plugin}\n\nsentiment\n  inspiring\n  mysterious\n  cheerful\n  dramatic\n  contemplative\n\nmessage\n  You are stronger than you think.\n  Adventure awaits those who seek it.\n  Every moment is a new beginning.\n  The world is full of wonder.\n  Trust in yourself.\n\n$output = [speak([message])]\n\n<main>\n  <h1>Text-to-Speech</h1>\n  <div class=\"tts-output\">\n    <p>[output]</p>\n  </div>\n  <button onclick=\"update();\">Speak</button>\n</main>\n\n<style>\n  body { display: grid; place-items: center; min-height: 100vh; background: #ecf0f1; font-family: sans-serif; }\n  .tts-output { text-align: center; background: white; padding: 2rem; border-radius: 8px; max-width: 500px; }\n  p { font-size: 1.1rem; margin: 1rem 0; color: #2c3e50; }\n  button { background: #3498db; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; }\n</style>\n"
+    },
+    {
+      "id": "multi-column-layout",
+      "label": "Multi-Column Layout",
+      "description": "Display outputs in a grid/column layout",
+      "content": "$col1 = [item]\n$col2 = [item]\n$col3 = [item]\n\nitem\n  Ruby\n  Sapphire\n  Emerald\n  Diamond\n  Topaz\n\n<main>\n  <h1>Three-Column Treasure</h1>\n  <div class=\"columns\">\n    <div class=\"column\">\n      <h3>Treasure 1</h3>\n      <p>[$col1]</p>\n    </div>\n    <div class=\"column\">\n      <h3>Treasure 2</h3>\n      <p>[$col2]</p>\n    </div>\n    <div class=\"column\">\n      <h3>Treasure 3</h3>\n      <p>[$col3]</p>\n    </div>\n  </div>\n  <button onclick=\"update();\">Find Treasure</button>\n</main>\n\n<style>\n  body { margin: 0; padding: 2rem; background: linear-gradient(to bottom, #1a472a, #2d5a3d); color: white; font-family: sans-serif; }\n  h1 { text-align: center; }\n  .columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 2rem 0; }\n  .column { background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; text-align: center; }\n  button { background: #d4af37; color: #1a472a; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-weight: bold; }\n</style>\n"
+    },
+    {
+      "id": "gallery-showcase",
+      "label": "Image Gallery Showcase",
+      "description": "Display random images in a gallery format",
+      "content": "image = {import:image-plugin}\n\nimageUrl\n  https://via.placeholder.com/300x300?text=Image+1\n  https://via.placeholder.com/300x300?text=Image+2\n  https://via.placeholder.com/300x300?text=Image+3\n  https://via.placeholder.com/300x300?text=Image+4\n  https://via.placeholder.com/300x300?text=Image+5\n\nimageTitle\n  Sunset Wonder\n  Ocean Dream\n  Mountain Peak\n  Forest Silence\n  City Lights\n\n$output\n  ![[[imageTitle]]][image([[imageUrl]])]\n\n<main>\n  <h1>Gallery</h1>\n  <div class=\"gallery-container\">\n    [output]\n  </div>\n  <button onclick=\"update();\">Show Random Image</button>\n</main>\n\n<style>\n  body { margin: 0; padding: 2rem; background: #f5f5f5; font-family: sans-serif; }\n  h1 { text-align: center; }\n  .gallery-container { display: grid; place-items: center; margin: 2rem 0; }\n  img { border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); max-width: 400px; }\n  button { display: block; margin: 2rem auto; background: #667eea; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; }\n</style>\n"
     }
   ]
 }
