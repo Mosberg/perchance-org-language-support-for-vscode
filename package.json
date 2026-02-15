@@ -14,9 +14,7 @@
   },
   "icon": "./assets/img/favicon-1024x1024-white-bg.png",
   "main": "./src/extension.js",
-  "activationEvents": [
-    "onLanguage:perchance"
-  ],
+  "activationEvents": [],
   "engines": {
     "vscode": "^1.109.0"
   },
