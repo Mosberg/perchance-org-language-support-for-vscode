@@ -1,0 +1,184 @@
+{
+  "templates_generators": [
+    {
+      "label": "Accordion",
+      "description": "A template for working with fold-away content.",
+      "url": "https://perchance.org/accordion-template",
+      "edit_url": "https://perchance.org/accordion-template#edit"
+    },
+    {
+      "label": "Accordion With Multiple Buttons",
+      "description": "A template for working with fold-away content. There's a randomization button in each section.",
+      "url": "https://perchance.org/accordion-multiple-buttons-template",
+      "edit_url": "https://perchance.org/accordion-multiple-buttons-template#edit"
+    },
+    {
+      "label": "Basic Template",
+      "description": "Hello! This is your generator's description. If you want other people to find and use your generator, then you should try to explain your generator a bit, what it's for, and maybe why you made it. If you page doesn't have enough of an explanation it may not be listed by search engines like Google because they can't work out what your webpage is about.",
+      "url": "https://perchance.org/basic-template",
+      "edit_url": "https://perchance.org/basic-template#edit"
+    },
+    {
+      "label": "Big Typography Template",
+      "description": "Big Typography Template is a template that you can use to make generators that have a bold and impactful design.",
+      "url": "https://perchance.org/big-typography-template",
+      "edit_url": "https://perchance.org/big-typography-template#edit"
+    },
+    {
+      "label": "Centered Minimal Example",
+      "description": "Centered Minimal Example is a template that you can use to make generators that have a centered minimalistic design.",
+      "url": "https://perchance.org/centered-minimal",
+      "edit_url": "https://perchance.org/centered-minimal#edit"
+    },
+    {
+      "label": "Centered With Background Template",
+      "description": "Centered With Background Template is a template that you can use to make generators that have a centered design with a background.",
+      "url": "https://perchance.org/centered-with-background-template",
+      "edit_url": "https://perchance.org/centered-with-background-template#edit"
+    },
+    {
+      "label": "Collection Template v1",
+      "description": "You could use this template to showcase the generators that you've made, or just group together a collection of generators that you like.",
+      "url": "https://perchance.org/collection-template",
+      "edit_url": "https://perchance.org/collection-template#edit"
+    },
+    {
+      "label": "Computer Terminal Template",
+      "description": "Computer Terminal Template is a template that you can use to make generators that have a computer terminal-style design.",
+      "url": "https://perchance.org/computer-terminal-template",
+      "edit_url": "https://perchance.org/computer-terminal-template#edit"
+    },
+    {
+      "label": "Dark Card Template",
+      "description": "Dark Card Template is a template that you can use to make generators that have a dark card design.",
+      "url": "https://perchance.org/dark-card-template",
+      "edit_url": "https://perchance.org/dark-card-template#edit"
+    },
+    {
+      "label": "Dark Typography Template",
+      "description": "Dark Typography Template is a template that you can use to make generators that have a clean and minimalistic design.",
+      "url": "https://perchance.org/dark-typography-template",
+      "edit_url": "https://perchance.org/dark-typography-template#edit"
+    },
+    {
+      "label": "Diary Example",
+      "description": "Diary Example is a template that you can use to make generators that have a diary design.",
+      "url": "https://perchance.org/diaryexample",
+      "edit_url": "https://perchance.org/diaryexample#edit"
+    },
+    {
+      "label": "Emoji Paragraph Template",
+      "description": "Emoji Paragraph Template is a template that you can use to make generators that have an emoji paragraph design.",
+      "url": "https://perchance.org/emoji-paragraph-template",
+      "edit_url": "https://perchance.org/emoji-paragraph-template#edit"
+    },
+    {
+      "label": "Generator List With Stats 2 Template",
+      "description": "Generator List With Stats 2 Template is a template that you can use to make generators that have a list design with statistics.",
+      "url": "https://perchance.org/generator-list-with-stats-2-template",
+      "edit_url": "https://perchance.org/generator-list-with-stats-2-template#edit"
+    },
+    {
+      "label": "Generator List With Stats Template",
+      "description": "Generator List With Stats Template is a template that you can use to make generators that have a list design with statistics.",
+      "url": "https://perchance.org/generator-list-with-stats-template",
+      "edit_url": "https://perchance.org/generator-list-with-stats-template#edit"
+    },
+    {
+      "label": "Glitch Text Template",
+      "description": "Glitch Text Template is a template that you can use to make generators that have a glitch text design.",
+      "url": "https://perchance.org/glitch-text-template",
+      "edit_url": "https://perchance.org/glitch-text-template#edit"
+    },
+    {
+      "label": "Interactive Terminal Template",
+      "description": "Interactive Terminal Template is a template that you can use to make generators that have an interactive terminal-style design.",
+      "url": "https://perchance.org/interactive-terminal-template",
+      "edit_url": "https://perchance.org/interactive-terminal-template#edit"
+    },
+    {
+      "label": "Little Story Template",
+      "description": "Little Story Template is a template that you can use to make generators that have a little story design.",
+      "url": "https://perchance.org/little-story-template",
+      "edit_url": "https://perchance.org/little-story-template#edit"
+    },
+    {
+      "label": "Long-Form Template",
+      "description": "Long-Form Template is a template that you can use to make generators that have a long-form content design.",
+      "url": "https://perchance.org/long-form-template",
+      "edit_url": "https://perchance.org/long-form-template#edit"
+    },
+    {
+      "label": "Minimal Template",
+      "description": "Minimal Template is a template that you can use to make generators that have a minimalistic design.",
+      "url": "https://perchance.org/minimal",
+      "edit_url": "https://perchance.org/minimal#edit"
+    },
+    {
+      "label": "Nauseating Retro Flicker",
+      "description": "Nauseating Retro Flicker is a template that you can use to make generators that have a nauseating retro flicker design.",
+      "url": "https://perchance.org/nauseating-retro-flicker",
+      "edit_url": "https://perchance.org/nauseating-retro-flicker#edit"
+    },
+    {
+      "label": "NES Template",
+      "description": "Hey there, this is the NES template. You can use it to make generators that have an old-school pixel-style theme.",
+      "url": "https://perchance.org/nes-template",
+      "edit_url": "https://perchance.org/nes-template#edit"
+    },
+    {
+      "label": "Newspaper Column Template",
+      "description": "Newspaper Column Template is a template that you can use to make generators that have a classic newspaper-style single-column layout.",
+      "url": "https://perchance.org/newspaper-column-template",
+      "edit_url": "https://perchance.org/newspaper-column-template#edit"
+    },
+    {
+      "label": "Newspaper Multi-Column Template",
+      "description": "Newspaper Multi-Column Template is a template that you can use to make generators that have a classic newspaper-style multi-column layout.",
+      "url": "https://perchance.org/newspaper-multiple-columns",
+      "edit_url": "https://perchance.org/newspaper-multiple-columns#edit"
+    },
+    {
+      "label": "Origin of Species Template",
+      "description": "Origin of Species Template is a template that you can use to make generators that have a design inspired by the Origin of Species.",
+      "url": "https://perchance.org/origin-of-species-template",
+      "edit_url": "https://perchance.org/origin-of-species-template#edit"
+    },
+    {
+      "label": "Stat Block 5e Generator Template",
+      "description": "To use this template, simply click the edit button, make some changes to the card properties (add your own randomness), and then click save. You can also change the styling of the card by editing the CSS in the template.",
+      "url": "https://perchance.org/stat-block-5e-template",
+      "edit_url": "https://perchance.org/stat-block-5e-template#edit"
+    },
+    {
+      "label": "Timeline Template",
+      "description": "The Subtitle Of The Page",
+      "url": "https://perchance.org/timeline-template",
+      "edit_url": "https://perchance.org/timeline-template#edit"
+    },
+    {
+      "label": "Tucked Corners Template",
+      "description": "Tucked Corners Template is a template that you can use to make generators that have a tucked corners design.",
+      "url": "https://perchance.org/tucked-corners-template",
+      "edit_url": "https://perchance.org/tucked-corners-template#edit"
+    },
+    {
+      "label": "Tweet Template",
+      "description": "Tweet Template is a template that you can use to make generators that have a Twitter tweet-style design.",
+      "url": "https://perchance.org/tweet-template",
+      "edit_url": "https://perchance.org/tweet-template#edit"
+    },
+    {
+      "label": "Twitter Feed Template",
+      "description": "Twitter Feed Template is a template that you can use to make generators that have a Twitter feed-style design.",
+      "url": "https://perchance.org/twitter-feed-template",
+      "edit_url": "https://perchance.org/twitter-feed-template#edit"
+    },
+    {
+      "label": "Visual Novel Template",
+      "description": "Visual Novel Template is a template that you can use to make generators that have a visual novel design.",
+      "url": "https://perchance.org/visual-novel-template",
+      "edit_url": "https://perchance.org/visual-novel-template#edit"
+    }
+  ]
+}

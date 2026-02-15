@@ -1,0 +1,34 @@
+{
+  "templates": [
+    {
+      "id": "basic",
+      "label": "Basic Generator",
+      "description": "Simple HTML with a button",
+      "content": "$output\n  The [adjective] [animal].\n\nadjective\n  sneaky\n  happy\n  curious\n\nanimal\n  fox\n  cat\n  owl\n\n<main>\n  <h1>Basic Generator</h1>\n  <p class=\"output\">[output]</p>\n  <button onclick=\"update();\">Generate</button>\n</main>\n\n<style>\n  body { font-family: sans-serif; margin: 2rem; }\n  .output { font-size: 1.25rem; margin: 1rem 0; }\n</style>\n"
+    },
+    {
+      "id": "blank",
+      "label": "Blank Generator",
+      "description": "Lists only with an output list",
+      "content": "$output\n  Hello from Perchance!\n"
+    },
+    {
+      "id": "centered-minimal",
+      "label": "Centered Minimal",
+      "description": "Centered layout with soft background",
+      "content": "$output\n  [sentence]\n\nsentence\n  A {quiet|tiny|bold} [animal] appears.\n\nanimal\n  rabbit\n  whale\n  gecko\n\n<main class=\"wrap\">\n  <h1>Centered Minimal</h1>\n  <div class=\"output\">[output]</div>\n  <button onclick=\"update();\">Generate</button>\n</main>\n\n<style>\n  body { font-family: serif; margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f6f0e8; }\n  .wrap { text-align: center; padding: 2rem 3rem; background: #fff; border: 1px solid #e0d6c6; }\n  .output { margin: 1rem 0; font-size: 1.4rem; }\n</style>\n"
+    },
+    {
+      "id": "dark-card",
+      "label": "Dark Card",
+      "description": "Dark card with monospace output",
+      "content": "$output\n  [noun] of [place]\n\nnoun\n  Echoes\n  Lanterns\n  Whispers\n\nplace\n  the north\n  dusk\n  the harbor\n\n<main class=\"card\">\n  <h1>Dark Card</h1>\n  <pre class=\"output\">[output]</pre>\n  <button onclick=\"update();\">Generate</button>\n</main>\n\n<style>\n  body { margin: 0; min-height: 100vh; background: #14171a; color: #f5f5f5; display: grid; place-items: center; font-family: monospace; }\n  .card { background: #1f2328; padding: 2rem; border: 1px solid #2e3238; }\n  .output { margin: 1rem 0; font-size: 1.1rem; }\n  button { background: #f5f5f5; color: #14171a; border: none; padding: 0.5rem 1rem; }\n</style>\n"
+    },
+    {
+      "id": "markdown",
+      "label": "Markdown Template",
+      "description": "Markdown output using markdown-plugin",
+      "content": "markdown = {import:markdown-plugin}\n\n$output = [markdown(markdownText)]\n\nmarkdownText\n  # Markdown Output\n  - A [adjective] [animal]\n  - A [adjective] [animal]\n\nadjective\n  bright\n  drifting\n  gentle\n\nanimal\n  fox\n  owl\n  turtle\n"
+    }
+  ]
+}
