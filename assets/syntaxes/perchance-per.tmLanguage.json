@@ -1,0 +1,5 @@
+{
+  "scopeName": "source.perchance.per",
+  "patterns": [{ "include": "source.perchance" }],
+  "repository": {}
+}

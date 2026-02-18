@@ -89,8 +89,10 @@
     ]
   ],
   "indentationRules": {
-    "increaseIndentPattern": "^\\s*(\\$[A-Za-z_][A-Za-z0-9_]*|[A-Za-z_][A-Za-z0-9_]*)\\s*$",
-    "decreaseIndentPattern": "^\\s*$"
+    "increaseIndentPattern": "^.*(\\{[^}\"']*|\\([^\"']*|\\[[^\"']*)$",
+    "decreaseIndentPattern": "^\\s*[\\}\\]\\)].*$",
+    "indentNextLinePattern": "^.*(\\bcase\\b[^:]*|\\bdefault\\b[^:]*):[^;]*$",
+    "unIndentedLinePattern": "^\\s*(\\bcase\\b[^:]*|\\bdefault\\b[^:]*):[^;]*$"
   },
   "onEnterRules": [
     {
